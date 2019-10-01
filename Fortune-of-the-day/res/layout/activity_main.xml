@@ -1,0 +1,63 @@
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/main"/>
+    
+    <EditText
+		android:id="@+id/editname"
+		android:layout_width="290px"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:phoneNumber="true"
+		android:layout_marginLeft="65px"
+		android:layout_marginTop="350px"
+	/>
+     
+     <EditText
+		android:id="@+id/editbirtday"
+		android:layout_width="290px"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:phoneNumber="true"
+		android:layout_marginLeft="65px"
+		android:layout_marginTop="450px"
+	/>
+    
+      <TextView
+		android:id="@+id/name"
+		android:layout_width="350px"
+		android:layout_height="wrap_content"
+		android:text="이름"
+		android:textSize="20sp"
+		android:layout_marginLeft="65px"
+		android:layout_marginTop="300px"
+	/>
+      
+            <TextView
+		android:id="@+id/birthday"
+		android:layout_width="350px"
+		android:layout_height="wrap_content"
+		android:text="생년월일(ex.19910101)"
+		android:textSize="20sp"
+		android:layout_marginLeft="65px"
+		android:layout_marginTop="400px"
+	/>
+
+    <ImageButton
+        android:id="@+id/click_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/click_bt"
+        android:onClick="onClick" />
+
+</RelativeLayout>
